@@ -1,7 +1,7 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind variants; */
+/* @tailwind variants; */
 
 h1,
 h2,
@@ -14,4 +14,6 @@ h6 {
 
 body {
   font-family: var(--font-secondary);
+  /* background-color: yellow; */
+
 }

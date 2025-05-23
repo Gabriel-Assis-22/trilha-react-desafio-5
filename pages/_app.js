@@ -1,4 +1,7 @@
-import '../../styles/g.css';
+// import '../../styles/global.css';
+// import '../styles/global.css';
+import '../styles/global.css';
+
 import 'prismjs/themes/prism-tomorrow.css';
 
 function MyApp({ Component, pageProps }) {
