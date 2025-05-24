@@ -62,9 +62,21 @@ export default function Index({ posts, globalData }) {
 export async function getServerSideProps() {
   const posts = await getPosts();
   const globalData = getGlobalData();
-  console.log(posts);
+  // console.log(posts);
+
+  if (!posts) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      posts,
+      globalData,
+    },
+  };
 
 
-
-  return { props: { posts, globalData } };
+  // return { props: { posts, globalData } };
 }
